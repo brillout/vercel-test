@@ -24,7 +24,7 @@ const files = walk(path.join(__dirname, '..')).filter(p => !p.includes('node_mod
 console.log('__dirname/**/*', files)
 
 module.exports = async (req, res) => {
-  console.log(3)
+  console.log(4)
   console.log('__dirname', __dirname)
   const files = walk(path.join(__dirname, '..')).filter(p => !p.includes('node_modules'))
   console.log('__dirname/**/*', files)
