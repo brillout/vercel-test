@@ -3,5 +3,11 @@
     "api/index.js": {
       "includeFiles": "build/**"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/.*",
+      "destination": "/api/index.js"
+    }
+  ]
 }
