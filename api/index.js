@@ -18,11 +18,17 @@ var walk = function(dir) {
     return results;
 }
 
+console.log(0)
 console.log('__dirname', __dirname)
 const files = walk(path.join(__dirname, '..')).filter(p => !p.includes('node_modules'))
 console.log('__dirname/**/*', files)
 
 module.exports = async (req, res) => {
+  console.log(2)
+  console.log('__dirname', __dirname)
+  const files = walk(path.join(__dirname, '..')).filter(p => !p.includes('node_modules'))
+  console.log('__dirname/**/*', files)
+
   res
     .status(200)
     .setHeader("content-type", "text/html")
