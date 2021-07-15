@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "build": "npm run build:files",
-    "build:files": "mkdir -p build/ && echo 'console.log(421)' > build/index.js"
+    "build": "mkdir -p build/ && echo 'console.log(42)' > build/index.js"
   }
 }
