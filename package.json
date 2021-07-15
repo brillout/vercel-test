@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "mkdir -p build/ && echo 'console.log(42)' > build/index.js"
+    "build": "mkdir -p build/ && echo 'console.log(42)' > build/someFile.js"
   }
 }
